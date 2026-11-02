@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0070d1;
+  --color-primary-pressed: #0064b7;
+  --color-primary-active: #004d8d;
+  --color-commerce: #d53b00;
+  --color-commerce-pressed: #aa2f00;
+  --color-canvas-dark: #000000;
+  --color-surface-dark-elevated: #121314;
+  --color-surface-dark-card: #181818;
+  --color-hairline: rgba(255, 255, 255, 0.12);
+  --color-ps-plus-gold: linear-gradient(90deg, #ffce21, #f5a623, #ee8e00);
+}
+
+html {
+  font-size: 16px;
+  color-scheme: dark;
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* PlayStation Display Typography: Signature Weight 300 (Light) */
+.ps-display-xl {
+  font-size: clamp(2rem, 5vw, 3.375rem);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.ps-display-lg {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.ps-display-md {
+  font-size: clamp(1.5rem, 3vw, 2.1875rem);
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.ps-heading-xl {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+/* PlayStation Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 112, 209, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0070d1;
+}
+
+/* PlayStation UI Utility Components */
+@layer components {
+  .ps-btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-[#0070d1] hover:bg-[#0064b7] active:bg-[#004d8d] text-white font-bold rounded-full px-6 py-2.5 transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_20px_rgba(0,112,209,0.35)];
+  }
+
+  .ps-btn-commerce {
+    @apply inline-flex items-center justify-center gap-2 bg-[#d53b00] hover:bg-[#aa2f00] text-white font-bold rounded-full px-6 py-2.5 transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_20px_rgba(213,59,0,0.35)];
+  }
+
+  .ps-btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 active:bg-white/5 text-white font-semibold rounded-full px-5 py-2 transition-all duration-200 border border-white/15 hover:border-white/30 backdrop-blur-sm;
+  }
+
+  .ps-card {
+    @apply bg-[#181818] border border-white/10 rounded-2xl p-5 transition-all duration-200 hover:border-[#0070d1] hover:shadow-[0_10px_30px_rgba(0,112,209,0.25)] relative overflow-hidden;
+  }
+
+  .ps-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold text-gray-200 transition-colors;
+  }
+
+  .ps-gold-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#ffce21] via-[#f5a623] to-[#ee8e00] text-black font-extrabold px-3 py-1 text-xs shadow-[0_0_15px_rgba(245,166,35,0.4)];
+  }
+}
+
+/* Subtle PlayStation Glyphs Pattern Watermark */
+.ps-shapes-bg {
+  background-image: radial-gradient(circle at 50% 0%, rgba(0, 112, 209, 0.18) 0%, transparent 60%);
+}
+
+.ps-grid-subtle {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Slot & Win Cascade Animations */
+@keyframes slot-screen-shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-3px, 2px) rotate(-0.4deg); }
+  40% { transform: translate(3px, -2px) rotate(0.4deg); }
+  60% { transform: translate(-2px, -1px) rotate(-0.2deg); }
+  80% { transform: translate(2px, 1px) rotate(0.2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes slot-shatter-explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+  25% {
+    transform: scale(1.18) rotate(3deg);
+    opacity: 0.95;
+    filter: brightness(2.2) drop-shadow(0 0 20px #0070d1);
+  }
+  65% {
+    transform: scale(0.6) rotate(-8deg);
+    opacity: 0.4;
+    filter: brightness(1.2);
+  }
+  100% {
+    transform: scale(0) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slot-shard-1 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: translate(-40px, -50px) scale(0) rotate(-180deg); opacity: 0; }
+}
+@keyframes slot-shard-2 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: translate(45px, -40px) scale(0) rotate(210deg); opacity: 0; }
+}
+@keyframes slot-shard-3 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: translate(-50px, 40px) scale(0) rotate(-240deg); opacity: 0; }
+}
+@keyframes slot-shard-4 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: translate(50px, 45px) scale(0) rotate(270deg); opacity: 0; }
+}
+
+@keyframes slot-gold-morph {
+  0% { transform: scale(1); filter: brightness(1); }
+  35% { transform: scale(1.3) rotate(6deg); filter: brightness(2.8) drop-shadow(0 0 30px #f5a623); }
+  70% { transform: scale(0.92) rotate(-3deg); filter: brightness(1.8) drop-shadow(0 0 20px #0070d1); }
+  100% { transform: scale(1) rotate(0deg); filter: brightness(1); }
+}
+
+@keyframes slot-tile-drop {
+  0% { transform: translateY(-80px); opacity: 0.2; }
+  60% { transform: translateY(10px); opacity: 1; }
+  80% { transform: translateY(-4px); }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-screen-shake {
+  animation: slot-screen-shake 0.35s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.animate-slot-shatter {
+  animation: slot-shatter-explode 0.45s ease-out forwards;
+}
+.animate-shard-1 {
+  animation: slot-shard-1 0.45s ease-out forwards;
+}
+.animate-shard-2 {
+  animation: slot-shard-2 0.45s ease-out forwards;
+}
+.animate-shard-3 {
+  animation: slot-shard-3 0.45s ease-out forwards;
+}
+.animate-shard-4 {
+  animation: slot-shard-4 0.45s ease-out forwards;
+}
+.animate-gold-morph {
+  animation: slot-gold-morph 0.5s ease-out forwards;
+}
+.animate-slot-drop {
+  animation: slot-tile-drop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
