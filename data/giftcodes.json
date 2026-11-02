@@ -1,0 +1,35 @@
+[
+  {
+    "code": "DINHVANTRINH",
+    "reward": 100000,
+    "description": "Giftcode đặc biệt Đinh Văn Trinh (100,000 vàng)",
+    "active": true,
+    "claimedBy": [],
+    "createdAt": 1793291710232
+  },
+  {
+    "code": "TANTHU",
+    "reward": 10000,
+    "description": "Giftcode Tân Thủ chào mừng người chơi mới (10,000 vàng)",
+    "active": true,
+    "claimedBy": [],
+    "createdAt": 1793291710232
+  },
+  {
+    "code": "OMNIDECK",
+    "reward": 20000,
+    "description": "Giftcode OmniDeck Arena mừng phát hành (20,000 vàng)",
+    "active": true,
+    "claimedBy": [],
+    "createdAt": 1793291710232
+  },
+  {
+    "code": "ZZZ",
+    "reward": 50000000000,
+    "description": "Giftcode ZZZ (50,000,000,000 vàng, dùng nhiều lần)",
+    "active": true,
+    "claimedBy": [],
+    "repeatable": true,
+    "createdAt": 1793291710232
+  }
+]

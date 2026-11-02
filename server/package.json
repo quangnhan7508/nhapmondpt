@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "node --import tsx --test src/engines/uno/UnoGame.test.ts src/engines/exploding-kittens/ExplodingKittensGame.test.ts src/engines/tien-len/TienLenGame.test.ts src/engines/sam/SamGame.test.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "@types/uuid": "^9.0.8",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "36062a3c-da9c-4b93-9151-ef56f37268d5",
+    "username": "pro_card_master",
+    "displayName": "🃏 Hoàng Thần Bài",
+    "passwordHash": "cae9e8b964d9b585e66636db56db8dd7cfc449ee2652d610cc903528d047302a",
+    "salt": "f8716343508ab13d55edef578a0acd64",
+    "avatar": "av-dragon",
+    "createdAt": 1792858709662,
+    "balance": 10000,
+    "stats": {
+      "unoWins": 18,
+      "explodingKittensWins": 14,
+      "tienLenWins": 22,
+      "totalWins": 54,
+      "totalGames": 68
+    },
+    "inventory": []
+  },
+  {
+    "id": "b8f3eefb-37b3-470d-9a0c-e09c350ad3d3",
+    "username": "kitten_bomb_expert",
+    "displayName": "💣 Mèo Nổ Sát Thủ",
+    "passwordHash": "0f68d1522e929937788b142b9048707f11700f82a663c454b3dc04f0ef59399a",
+    "salt": "d1386ab3ee226a2718e6deff993ed991",
+    "avatar": "av-cat",
+    "createdAt": 1792945109662,
+    "balance": 10000,
+    "stats": {
+      "unoWins": 12,
+      "explodingKittensWins": 25,
+      "tienLenWins": 9,
+      "totalWins": 46,
+      "totalGames": 59
+    },
+    "inventory": []
+  },
+  {
+    "id": "280bcba6-79ee-439c-81ad-8ca159969e13",
+    "username": "tien_len_de_nhat",
+    "displayName": "♠️ Tiến Lên Đệ Nhất",
+    "passwordHash": "e5202db5218ba666164969374cec57893bb297c660e9aa63b84695e22ecd1e25",
+    "salt": "d3060abd3787b4f1800cb39a1cad0d79",
+    "avatar": "av-ninja",
+    "createdAt": 1793031509662,
+    "balance": 10000,
+    "stats": {
+      "unoWins": 8,
+      "explodingKittensWins": 11,
+      "tienLenWins": 24,
+      "totalWins": 43,
+      "totalGames": 52
+    },
+    "inventory": []
+  },
+  {
+    "id": "dba4c637-cb92-430a-b526-fbde88763c40",
+    "username": "uno_queen",
+    "displayName": "👑 Nữ Hoàng UNO",
+    "passwordHash": "e891ce05033fc8a9ece350c433f2e13a9a32b142e11a7cea5d4683bbf2b808cb",
+    "salt": "ee64aef5c3bd902dfee79bbbd77ea36d",
+    "avatar": "av-fox",
+    "createdAt": 1793117909662,
+    "balance": 10000,
+    "stats": {
+      "unoWins": 26,
+      "explodingKittensWins": 6,
+      "tienLenWins": 7,
+      "totalWins": 39,
+      "totalGames": 50
+    },
+    "inventory": []
+  },
+  {
+    "id": "f51930a1-b933-4333-9c66-fba0d5e8872f",
+    "username": "cowboy_mvtqzjbz",
+    "displayName": "Sheriff Joe",
+    "passwordHash": "376cbb31de38b229f897a080090d2ba6c9cb591ba0ea1c99ec12c5c6b945fab5",
+    "salt": "a1b73d4a960d4fc098896e01b66c94e8",
+    "avatar": "av-dragon",
+    "createdAt": 1793290709663,
+    "balance": 48990,
+    "stats": {
+      "unoWins": 0,
+      "explodingKittensWins": 0,
+      "tienLenWins": 0,
+      "totalWins": 0,
+      "totalGames": 0
+    },
+    "inventory": []
+  },
+  {
+    "id": "b5d66e02-931a-4014-82a5-0d0c758493d7",
+    "username": "btl_1_mvtqzjc8",
+    "displayName": "Player One",
+    "passwordHash": "ce1cf611009833e7f5ad7229eb3dc221b54b8a744d43e42203e79456bfd03a54",
+    "salt": "f8eea9a1962d0ad5addb066d57a20a88",
+    "avatar": "av-fox",
+    "createdAt": 1793290709672,
+    "balance": 5500,
+    "stats": {
+      "unoWins": 0,
+      "explodingKittensWins": 0,
+      "tienLenWins": 0,
+      "totalWins": 0,
+      "totalGames": 0
+    },
+    "inventory": []
+  },
+  {
+    "id": "864281b5-5aad-4fe0-b9ac-a5bb9382f0a0",
+    "username": "btl_2_mvtqzjc8",
+    "displayName": "Player Two",
+    "passwordHash": "fd8e2c0b9ba8663edfbf1f5378d0291710f15e183047647aaed232d938c6fe63",
+    "salt": "3a2df7e7d8c9d31f1541c3e40ef9c594",
+    "avatar": "av-cat",
+    "createdAt": 1793290709673,
+    "balance": 5500,
+    "stats": {
+      "unoWins": 0,
+      "explodingKittensWins": 0,
+      "tienLenWins": 0,
+      "totalWins": 0,
+      "totalGames": 0
+    },
+    "inventory": []
+  },
+  {
+    "id": "54ed0a4f-59c5-478a-a2c4-7c3778b127d0",
+    "username": "zlongnhat123",
+    "displayName": "zlvx",
+    "passwordHash": "0a837d149fc2dfadcdfaddf237915b0988f210ddd257d22f7d45381a9f5d240e",
+    "salt": "d96023a99f0dd2f9ad02d8cf89a2fca9",
+    "avatar": "av-fox",
+    "createdAt": 1793549265819,
+    "balance": 450,
+    "stats": {
+      "unoWins": 0,
+      "explodingKittensWins": 0,
+      "tienLenWins": 0,
+      "totalWins": 0,
+      "totalGames": 0
+    },
+    "inventory": []
+  }
+]
